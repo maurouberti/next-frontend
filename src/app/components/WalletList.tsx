@@ -7,7 +7,7 @@ import {
   TableHeadCell,
   TableBody,
 } from "flowbite-react";
-import { Wallet } from "../models";
+import { Wallet } from "../../models";
 import Link from "next/link";
 
 export async function getWallets(): Promise<Wallet[]> {

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Asset } from "../models";
+import { Asset } from "../../models";
 
 export function AssetShow(props: { asset: Asset }) {
   const { asset } = props;

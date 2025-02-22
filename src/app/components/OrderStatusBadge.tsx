@@ -1,5 +1,5 @@
 import { Badge } from "flowbite-react";
-import { OrderStatus } from "../models";
+import { OrderStatus } from "../../models";
 
 export function OrderStatusBadge(props: { status: OrderStatus }) {
   let color: string;

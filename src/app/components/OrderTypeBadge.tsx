@@ -1,5 +1,5 @@
 import { Badge } from "flowbite-react";
-import { OrderType } from "../models";
+import { OrderType } from "../../models";
 
 export function OrderTypeBadge(props: { type: OrderType }) {
   return (

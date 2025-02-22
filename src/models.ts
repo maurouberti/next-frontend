@@ -6,6 +6,13 @@ export type Asset = {
   image_url: string;
 };
 
+export type AssetDaily = {
+  _id: string;
+  asset: Asset;
+  date: string;
+  price: number;
+};
+
 export type WalletAsset = {
   _id: string;
   asset: Asset;
@@ -17,17 +24,16 @@ export type Wallet = {
   assets: WalletAsset[];
 };
 
-
 export enum OrderType {
-  BUY = 'BUY',
-  SELL = 'SELL',
+  BUY = "BUY",
+  SELL = "SELL",
 }
 
 export enum OrderStatus {
-  PENDING = 'PENDING',
-  OPEN = 'OPEN',
-  CLOSED = 'CLOSED',
-  FAILED = 'FAILED',
+  PENDING = "PENDING",
+  OPEN = "OPEN",
+  CLOSED = "CLOSED",
+  FAILED = "FAILED",
 }
 
 export type Order = {
